@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="List Produk"
+            android:textSize="20sp"
+            android:id="@+id/tw"/>
+
+        <ImageView
+            android:id="@+id/img_acount"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            tools:src="@drawable/ic_person_black_24dp"
+            android:layout_marginRight="70dp"
+            android:layout_toRightOf="@+id/tw"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:id="@+id/rv_food"
+        tools:listitem="@layout/list_food"/>
+
+</RelativeLayout>
